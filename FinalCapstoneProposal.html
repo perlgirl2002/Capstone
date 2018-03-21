@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.5  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Kim Berry">
+	<META NAME="CREATED" CONTENT="20180321;11100620">
+	<META NAME="CHANGED" CONTENT="0;0">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		H1 { margin-bottom: 0.08in }
+		H1.western { font-family: "Times New Roman", serif }
+		H1.cjk { font-family: "SimSun" }
+		H1.ctl { font-family: "Arial" }
+		H2 { margin-bottom: 0.08in }
+		H2.cjk { font-family: "SimSun" }
+		H2.ctl { font-family: "Arial" }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<DIV ID="site" DIR="LTR">
+	<DIV ID="ipython-main-app" DIR="LTR">
+		<DIV ID="notebook_panel" DIR="LTR">
+			<DIV ID="notebook" DIR="LTR">
+				<DIV ID="notebook-container" DIR="LTR">
+					<H1 CLASS="western">Final Capstone Proposal</H1>
+					<P>Kimberly Nowell-Berry</P>
+					<H2 CLASS="western">Thinkful Data Science 
+					</H2>
+					<P>For my final capstone in the Thinkful Data Science Course, I
+					will be implementing multiple models in attempt estimate the
+					probability of sequences in computer log activity. I will
+					determine the likelihood that a user follows a particular path.</P>
+					<P>When a malicious user or attacker attacks a network, there
+					are generally traces of this behavior left behind in the form of
+					logs, whether these are endpoint logs, e.g., Windows or Linux
+					Operating system event, access and security logs, network based
+					logs, e.g., Intrusion Detection Systems (IDS), netflow logs,
+					firewall logs, router logs, or application logs, e.g.,
+					HypterText Transfer Protocol (HTTP) web server logs, database
+					logs, etc. With the multiple different logs, identification of a
+					malicious user is difficult, and anomaly detection plays a
+					critical role in identifying malicious behavior.</P>
+					<P>While anomaly detection identifies interesting events in
+					these logs, it is typically not sufficient individually to
+					determine whether or not a particular event is actually
+					malicious. In order to just that, multiple individual anomalous
+					events that can be correlated together provide a strong
+					indication that actual malicious activity is present. 
+					</P>
+					<P>In this Capstone, I will identify anomalous activity in log
+					data using multiple anomaly detection techniques, including but
+					not limited to Kalman Filters and time series anomaly detection,
+					relate those back to tactics, and use a Markov chain to predict
+					the probability that a user performed those activities.
+					Probabilities that are very low would indicate that that
+					sequence of events has happened and would be a strong indication
+					that an attack has occurred. This utility of this model is
+					two-fold: 
+					</P>
+					<UL>
+						<LI><P STYLE="margin-bottom: 0in">Correlating anomalous events
+						together automatically reduces the human requirement to
+						manually pull these events together, freeing security analysts
+						to perform other tasks</P>
+						<LI><P>Providing the probability of a particular sequence being
+						followed can aide in attribution of specific attacks, which is
+						real-world, hard problem</P>
+					</UL>
+					<H2 CLASS="western">Data</H2>
+				</DIV>
+			</DIV>
+		</DIV>
+	</DIV>
+</DIV>
+<P STYLE="margin-bottom: 0in">For this Capstone, I will be using the
+sample data available from Carnegie Mellon's Software Engineering
+Institute.  The data consists of email, http, network logon events,
+and others.  The data contains specific attacks that have been
+identified in separate answer keys so that results can be validated
+against the true results.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">This data will be downloaded and
+imported into dataframes for analysis.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">Challenges</H2>
+<P STYLE="margin-bottom: 0in">The biggest challenge I anticipate is
+achieving good results.  This is an experient to determine whether
+the theory of mapping the individual anomaly detection results to a
+Markov chain for predictive capabilities is viable solution to this
+problem.  If so, this would be significant contribution to Threat
+Hunting in the CyberSecurity field.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+</BODY>
+</HTML>
